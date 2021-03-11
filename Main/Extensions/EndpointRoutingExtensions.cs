@@ -17,8 +17,12 @@ namespace Main.Extensions
                     pattern: "{controller=Account}/{action=LogIn}/{id?}");
 
                 endpoints.MapControllerRoute(
-                    name: "index",
+                    name: "register",
                     pattern: "{controller=Account}/{action=Register}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "index",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
             //Add new endpoints here
